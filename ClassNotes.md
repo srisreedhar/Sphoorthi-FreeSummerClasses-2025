@@ -1,1 +1,973 @@
 # Class Notes 
+
+
+03May2025
+
+
+For code sharing - GitHub Link
+For Class Notes  - Google Docs
+Syllabus  - Google Doc
+
+ - by  09May2025
+
+
+
+Python :
+
+- installation - IDLE, Shell, [ Jupyter, Spyder, Pycharm/VC Code
+- Tools
+- Variables - assignment operator; variable names; 
+- Print functions
+- Basic programs
+
+
+
+Variables - variables are container like structures that Hold data in it, we can call them as identifiers/aliases of values.
+
+how to create/define variables ?
+
+
+LHS = RHS
+variableName = Value
+any_name_without_spaces = int, float, str, filename, name of a song, URL ..... Matrix of values, 
+							image, expression ( that outputs a result) 3+9+4+8+1 , function that returns a value
+
+Program - input - output
+
+
+Inputs
+       - numbers
+               - real numbers : 1,2,3,4,5.... 1111    : - int 
+
+               - decimal numbers : 1.23. 0.001, 3.333, 1.111   : - float
+
+               - Boolean  : True, False : bool
+         
+         strings/ str
+		       - alphabets : a,b,c,d,e,f,g ...
+
+		       - words : apple, banana, good, ... 
+
+		       - paragraphs : collection of words
+
+		       - special chars : symbols - #$%^&*() space
+
+
+       - always strings will have quotations - '' , " "
+
+       'sree' , "sree" 
+
+strings - all the strings/characters/alphabets/sentences/paragraphs should be defined with quotations around it.
+ these quotes can be single quotes or double quotes , " ", ' ', '''  ''' , """  """
+
+
+'apples','pineapples','free classes are very informative'
+
+
+Proper way of define/creating variables -- 
+
+
+
+### Variable Names
+
+
+1) Variable names should always be in lower cases *
+2) Variable names should always be unique
+3) you can use underscores as a char within variable name
+            first_name, last_name
+
+4) 
+
+first_name = "sri"
+firstname____name = "somename"
+
+_first = "aa"
+second_ = "bb"
+
+____ = "a"
+
+
+*** 5) We use Upper case variable Name for Global Declarations
+*** 6) functions/function names shold be defined in Camel case  camelCase
+
+
+
+Commenting - #
+anything after # is treating as a comment is ignored by Python and is not executed.
+
+Operators -
+
+Addition  +
+Subtraction -
+Assignment operator =
+Equality checking operator ==  
+multiplication *
+Power **
+
+*** divide/divisible by   / 
+
+
+2) 14 (7
+   14
+   ___
+   0
+2 - ?
+7 - ?
+0 - ?
+
+
+2) 3 (1
+   2
+   ___
+   1
+
+
+
+
+
+# find the average of 6 subject marks
+
+- we need 6 subject marks
+- first find the total of 6 subject marks
+  second, divide that total by number of subjects
+
+ - print the answer
+
+
+
+# defining 6 subject marks
+ maths = 80
+ telugu = 90
+ hindi = 40
+ social = 70
+ science = 80
+ english = 36
+
+# find the total of 6 subjects
+
+total = maths + telugu + hindi + social + science + english
+
+# divide the total with 6 
+
+avg = total/6
+
+
+
+### Program Structure
+
+
+ - Data Part
+ - Logic Part
+ - Results/Presentation Part
+
+######   - Data Part  ###########
+
+# defining 6 subject marks
+ maths = 80
+ telugu = 90
+ hindi = 40
+ social = 70
+ science = 80
+ english = 36
+
+######   Logic Part  ###########
+
+# find the total of 6 subjects
+
+total = maths + telugu + hindi + social + science + english
+
+# divide the total with 6 
+
+
+
+
+######   Results Part  ###########
+
+
+avg = total/6
+
+
+
+
+### Collecting Inputs from the user directly
+
+
+input(somevalue) - function collects user inputs,
+			It reads all the keystrokes of the keyboard and returns them as is
+			input() will only collect andwill not store any values.
+			define a variable and assign an input function to it so that the value collected by input() is stored in respective variable.
+
+			input() will always collects everything as strings
+
+
+function - collection of multiple commands put together as a single word
+     will accept values as inputs 
+     the inputs we pass into a function are known as parameters/Arguments
+     somevalue - parameter/argument/arg
+
+prompt - the parameter/arg we pass into the input function 
+input("enter your name    :") here, enter your name    :" is the prompt
+
+
+
+Version - 2
+
+# define 3 subject marks
+
+maths = input("Enter your maths marks     :")
+Enter your maths marks     :30
+
+science = input("Enter your science marks     :")
+Enter your science marks     :50
+
+telugu = input("Enter your telugu marks     :")
+Enter your telugu marks     :80
+
+
+maths
+'30'
+science
+'50'
+telugu
+'80'
+
+total = maths + science + telugu
+
+total
+'305080'
+# joining/concatenation , not addition
+
+
+
+
+type() - the type() tells us what datatype it is.
+		 It takes a value as an input and tells us if the input is an integer or a float or a string
+
+		 type(Value)
+
+
+### DataType conversions / TypeCasting
+
+ - Converting a datatype from one type to another type
+ 	eq : converting an integer into a string
+
+ 06May2025
+
+
+ Type casting / Data type conversions
+ Dynamic/Run time Data type conversions
+
+ Run Programs
+
+
+
+ Strings 
+
+
+
+
+### Type casting / Data type conversions
+
+
+to convert into a string - str()
+to convert into an integer - int()
+to convert into a decimal - float()
+
+
+int(value) -> integer value
+
+The above functions will only return a new value,
+they will not change the parent value / existing value
+inorder to change the existing values, we need to override the variables with latest values
+
+
+### Chaining of functions
+
+int(input())
+
+
+
+maths_n = int(maths)
+science_n = int(science)
+social_n = int(social)
+hindi_n = int(hindi)
+telugu_n = int(telugu)
+english_n = int(english)
+
+
+Print Function - print displays or prints the convent on the screen, this is a presentation function that displays values/text on the screen or as output
+
+print() is the keyword
+
+
+print(value) - this only prints the value
+
+print("some help text",value) - this print the text first and then the value
+print("his name is ",name) >>> "his name is einstein"
+
+print("his name is",name,"he is ", age,"years old","his favourite food is",food,1111)
+
+
+Print formatting , multi-line printing
+
+name = "einstein"
+age = 72
+food = 'idly'
+
+print(name)
+einstein
+
+print(age)
+72
+
+print(name,age)
+einstein 72
+print(name,'is',age)
+einstein is 72
+
+
+print("His name is",name,"he is ",age,"years old","his fav food is",food)
+His name is einstein he is  72 years old his fav food is idly
+
+
+### Strings
+
+anything which has quotes around it - string/str
+strings are collections ( multiple values as a single value)
+string are immutable
+strings will have positional addresses/location - indices ( index )
+string have length
+
+strings are considered as Text and will have case functions
+
+uppercase 
+lowercase
+titlecase
+
+
+we can extract single value from the entire string based on their positions
+
+
+len() - is the function that takes a value and outputs the length of it/total characters persent in it
+The output type is integer
+
+
+text cases
+
+These methods/functions will not replace the old strings with new formatted strings
+these will only return the modified values, the actual values are undisturbed.
+
+
+  - upper case : converting a string to upper case.
+
+                 String.upper()
+
+
+
+  - lower case : convert a string to lower case.
+
+                String.lower()
+
+
+  - title case : convert a string to a title case
+
+               String.title()
+
+
+- .capitalize() : this method capitalizes 
+               String.capitalize()
+
+
+
+
+function(variable) - function
+variable.function() - methods ( designed for specific datatype only)
+
+
+dir() - a builtin function that takes a dattype and gives all posible functions of that datatype.
+
+
+sublimetext editor
+
+
+
+
+
+07May2025 ::  
+
+Strings 
+Candidate Interview
+Data Structures
+
+
+name = "sphoorthi"
+
+- length
+- indices/index
+
+
+### Indexing
+        - extract the values from a specific position in a collection using indexing
+
+
+Indexing can ben done from Right to left with the addresses starting from 0 to n and from left to right the address starting from -1 to -n
+
+the last index value would be len(string)-1
+
+
+we extract values from the collection using below syntax
+
+VariableName[IndexNumber]
+
+name[0] , name[1], name[2],name[3] ...
+
+
+
+### Print formatting
+
+Placeholders 
+for strings - %s
+for integers - %d
+
+
+
+08May2025
+
+
+- String methods ( validations)
+- conditionals
+- data structures
+
+
+- How to execute a program from a command line ?
+
+- save the program in a folder
+- open that folder in command line
+- locate the program you've saved
+- type below syntax and hit enter
+
+python program_name.py
+
+
+
+Identifying - Features
+
+
+
+
+### conditionals
+
+we use if as a conditions - executing in the programming
+
+"what if ?"
+
+1) simple if condition 
+
+we use the keyword, if with a condition and execute the code based on that condition
+
+
+if <condition>:
+    code to be execute
+    code line
+    code line
+    code lines
+    to be executed only when the condition is TRUE
+
+
+condition - True / False
+
+
+condition's output is true, then the code block within if is executed, if the output is false then not
+
+
+if raining:
+   carry umbrella
+
+
+2) simple if-else condition
+
+ in cases where the if fails or the condition in IF is False then the alternative should be executed, the Else block is the alternative
+
+
+
+if <Condition>:
+	Execute this block only when 
+    the condition in if block is TRUE
+else:
+     execute this block when the 
+     condition in the IF block is False
+
+
+eg :
+
+# it_is_raining = True/False
+
+if it_is_raining:
+    take a cab and go to office
+else:
+    Go on bike
+
+
+
+else will not have any condition and will be only executed in the scenarios when the condition in if is false
+
+
+
+- if a number is divisible by 5
+- tiffin center
+
+
+09 May 2025
+
+Nested IF conditions
+Conditions Chaining using Logical Operators
+
+Data Structures
+
+
+
+
+
+find if a number is greater than x or lesser than x or equal to x
+x & number can be any integers
+
+
+greater than x
+
+lesser than x
+
+equal to x
+
+
+if-elif
+
+There will be only one if block and there can be any number of elif blocks
+elif - (else if)a combination of both else & if which takes a condition unlike else block
+
+
+if <condition>:
+    Code to be executed when the condition is True
+
+elif <condition>:
+    Code to be executed when the condition is True
+
+elif <condition>:
+    Code to be executed when the condition is True
+
+elif <condition>:
+    Code to be executed when the condition is True
+
+elif <condition>:
+    Code to be executed when the condition is True
+
+elif <condition>:
+    Code to be executed when the condition is True
+
+elif <condition>:
+    Code to be executed when the condition is True
+
+else :
+      Code to be executed when all the above conditions are not met
+
+
+
+
+
+
+
+
+"Hi StudentName ( in capitals),
+
+Your sub1 marks are :
+Your sub2 marks are :
+Your sub3 marks are :
+-
+-
+-
+-
+
+Your Average is : 
+The grade assigned to you in : Grade
+
+Thank you"
+
+
+
+
+
+
+govt scheme -
+
+age should be more than 60, yearly income should be less than 1 lakh rupees, family size should be less than 4, no other alternative income sources, no lands, no properties
+then they're eligible for free govt scheme
+
+
+### Logic gating / conditional chaining
+
+
+we chain all the conditions using AND & OR
+
+
+AND operator - in the chain of multiple conditions, only when the case all the conditions are TRUE then the 
+                final outcome will be TRUE
+
+OR Operator - in the chain of multiple conditions, if atleast one condition is TRUE then the entire chain 
+                will be  TRUE
+
+
+Eg : - 
+False or False or False or False or False or False or True
+True
+
+
+if (65>6) and (66>51) and (55>1) and (64 >3) and (72 > 1) and (5 <42):
+    print("Executed becasue the final reulst is TRUE")
+
+    
+Executed becasue the final reulst is TRUE
+
+
+
+if (65>6) and (66>51) and (55>1) and (64 >3) and (72 > 1) and (5 <4):
+    print("Executed becasue the final reulst is TRUE")
+
+
+
+
+
+scalars  - single values, data types
+
+vectors - collection of scalars, multiple values, multiple data types
+
+
+
+
+### Data Structures 
+
+- is a container like stucture that holds data in an orderly manner as per the datastructure being used.
+
+
+
+- List 
+
+- Tuple
+
+- Dictionary
+
+- Set (function)
+
+
+10May2025
+
+### LIST
+
+
+- List
+
+        - Arrays
+        - mutable data structures ( we can modify the size of the list, add/remove values)
+        - we create a list using  [] ; assign [] to any variable
+        - list, list() are the keyword and functions of list
+        - indexing, length are applicable
+        - Lists are Homogenous Data Structures ( all same data types in the list)
+        - each and every value in list are comma seperated and the value can be anything between commas
+
+        [1,2,3,4,5,6,7], ['a','b','c','d','e']  -> homogenous lists
+        [1,2.5,'apple',False] -> Heterogenous List X
+
+
+names = ['einstein','tesla','faraday','ramanujan']
+
+
+
+# adding values to a list
+ListName.append()
+- all the values which are being added are appened from the end/tail of the list.
+  [] <-
+
+names.append("NewName")
+
+
+
+
+# removing values from a list
+ListName.remove(Value)
+
+.remove(Value) takes an argument, a value which needs to be removed from the list. the values needs to be exist in the list.
+
+
+# removing values based on their index number
+.pop() removes values rom the end if no argument is passed. pop deletes values from the end/tail
+ListName.pop(IndexNumber) - pop takes an index number and removes value of that index number
+
+
+# unpacking another list and adding only values of another list
+# listname.extend(another_list)
+this will unpack the another list and only adds values to current list
+
+
+
+# extending a list with the values of another list / merge
+
+ListName.extend(Value)
+
+
+
+
+- if we do not pass any index number, it by default removes the last element from a list
+- It always returns the value which is being popped out/removed
+
+
+
+# To clear or Empty the entire list / delete all elements in the List
+
+Listname.clear()
+
+
+
+###  Tuple
+        - are immutable data structures
+        - they're the opposite of lists
+        - we create a tuple using () 
+        - tuple,tuple() are the keywords
+        - len & indexing are applicable
+
+
+
+
+
+Dictionary
+    - weather data
+    - apis
+
+['11', '11', '11', '11', '11', '11']
+
+
+
+Loops
+Functions
+- packages
+
+Data Analysis
+
+SQL
+
+
+
+Errors:
+
+AttributeError: 'list' object has no attribute 'upper'
+ValueError: list.remove(x): x not in list
+NameError: name 'dd' is not defined
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+
+
+
+
+### Loops
+
+For Loop - repeating the same piece of code / code block or set of commands on every item in a 
+            collection
+
+
+syntax
+
+for each_item in collection:
+    write code on each_item only
+
+
+for - keyword that we use to initiate for loop
+
+
+each_item - Temp Variable / Loop Variable
+             this stores every value in a collection till it is processed
+             when the loop is initiated,
+                - the first value in the collection is assigned to loop variable
+                        each_item = firt_value
+                - then the code is applied on that
+                - once completed, it moves to the second element in the collection
+                - the second element is aassigned to the loop variable 
+                - this cycle continues till the end of the collection or all the values are processed.
+
+                - you always have to write code on each_item itself as this is the variable that iterates.
+
+                - the loop/iteration happens for lenght of collection times, 
+                   i.e., if the collection has 10 values, the loop will run 10 iterations or the code block is executed 10 times for each value in the collection
+
+
+
+
+
+
+
+
+
+['brinjal', 'okra', 'bottleguard', 'kothmir']
+
+
+
+for item in ['brinjal', 'okra', 'bottleguard', 'kothmir']:
+    x = item.upper()
+    print(x)
+
+
+item='brinjal', 
+x = item.upper()
+print(x)
+
+>>> BRINJAL
+
+
+item='okra', 
+x = item.upper()
+print(x)
+
+>>> OKRA
+
+
+item='bottleguard',
+x = item.upper()
+print(x)
+
+>>> BOTTLEGUARD
+
+
+ item='kothmir'
+ x = item.upper()
+print(x)
+>>> KOTHMIR
+
+
+veg[1].upper()
+'OKRA'
+veg_upper.append(veg[1].upper())
+veg_upper
+['BRINJAL', 'OKRA']
+
+
+veg[2].upper()
+'BOTTLEGUARD'
+veg_upper.append(veg[2].upper())
+veg_upper
+['BRINJAL', 'OKRA', 'BOTTLEGUARD']
+
+
+
+veg[3].upper()
+'KOTHMIR'
+veg_upper.append(veg[3].upper())
+veg_upper
+['BRINJAL', 'OKRA', 'BOTTLEGUARD', 'KOTHMIR']
+
+
+
+
+
+
+1)
+for each in 123456:
+ print(each)
+
+2)
+for each in "123456":
+ print(each)
+
+
+13May2025
+
+- github account
+
+create an account on github.com 
+
+
+
+
+
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99]
+
+
+
+stringName.split(delimitter)
+
+                    - splits a string into multiple parts based on the (argument) delimitter
+                    - by default it considers space as a delimitter
+                    - the output will be a list
+                    - this will not impact the actual defination
+
+
+### unpacking variables from a collection:
+
+veg
+['brinjal', 'okra', 'bottleguard', 'kothmir']
+
+
+a,b,c,d = veg
+a
+'brinjal'
+b
+'okra'
+c
+'bottleguard'
+d
+'kothmir'
+
+
+
+### Membership checking operator - in
+
+if we want to check if a value is a part or a member of or exists in  a collection, then we use membership operator
+
+"value_you_want_to_check" in collection
+
+5 in [1,2,3,4,5,6,7,8,9]
+
+when executed this returns a boolean value,
+if the value is present, it returns True or False if it doesnt
+
+
+
+'s' in 'sphoorthi'
+
+
+
+:) :D :x 
+
+
+
+
+
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=0)
+
+fn,ln = name.split()
+
+
+14May2025
+
+
+### Counters in Loops
+
+
+
+numbers = [1,1,1,1,1,1,1,1,2,2,2,3,3,3,3,4,4,4,4,5,5,5,6,7,8,9]
+
+
+when there's a collection and we have to count the number of occurances or repititions of a particular item/value in that collection, then we need to count those number of occurances.
+
+to implement counting mechanism we create a variable outside of forloop and increment/increase the variable everytime we come across that value
+
+we call this variable as counter / counter variable.
+
+counter = 0
+for something in collection:
+
+
+in the above example we defined a counter varaible and set its value to 0, the counter variables will have
+the initial values as 0, based on the occurances of a value in collection the 0 will be incremented
+
+
+
+
+
+
+
