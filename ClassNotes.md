@@ -35,8 +35,10 @@ any_name_without_spaces = int, float, str, filename, name of a song, URL ..... M
 Program - input - output
 
 
-Inputs
+#### Input types
+
        - numbers
+       
                - real numbers : 1,2,3,4,5.... 1111    : - int 
 
                - decimal numbers : 1.23. 0.001, 3.333, 1.111   : - float
@@ -77,7 +79,7 @@ Proper way of define/creating variables --
             first_name, last_name
 
 4) 
-
+```python
 first_name = "sri"
 firstname____name = "somename"
 
@@ -85,6 +87,7 @@ _first = "aa"
 second_ = "bb"
 
 ____ = "a"
+```
 
 
 *** 5) We use Upper case variable Name for Global Declarations
@@ -106,11 +109,12 @@ Power **
 
 *** divide/divisible by   / 
 
-
-2) 14 (7
+```
+2) 14 (7 - Quotient
    14
    ___
-   0
+   0 - remainder
+   
 2 - ?
 7 - ?
 0 - ?
@@ -121,7 +125,7 @@ Power **
    ___
    1
 
-
+```
 
 
 
@@ -152,7 +156,7 @@ total = maths + telugu + hindi + social + science + english
 avg = total/6
 
 
-
+```python
 ### Program Structure
 
 
@@ -186,7 +190,7 @@ total = maths + telugu + hindi + social + science + english
 
 avg = total/6
 
-
+```
 
 
 ### Collecting Inputs from the user directly
@@ -209,7 +213,7 @@ prompt - the parameter/arg we pass into the input function
 input("enter your name    :") here, enter your name    :" is the prompt
 
 
-
+```python
 Version - 2
 
 # define 3 subject marks
@@ -237,7 +241,7 @@ total
 '305080'
 # joining/concatenation , not addition
 
-
+```
 
 
 type() - the type() tells us what datatype it is.
@@ -299,7 +303,7 @@ Print Function - print displays or prints the convent on the screen, this is a p
 
 print() is the keyword
 
-
+```python
 print(value) - this only prints the value
 
 print("some help text",value) - this print the text first and then the value
@@ -328,7 +332,7 @@ einstein is 72
 
 print("His name is",name,"he is ",age,"years old","his fav food is",food)
 His name is einstein he is  72 years old his fav food is idly
-
+```
 
 ### Strings
 
@@ -465,31 +469,31 @@ we use if as a conditions - executing in the programming
 
 we use the keyword, if with a condition and execute the code based on that condition
 
-
+```python
 if <condition>:
     code to be execute
     code line
     code line
     code lines
     to be executed only when the condition is TRUE
-
+```
 
 condition - True / False
 
 
 condition's output is true, then the code block within if is executed, if the output is false then not
 
-
+```python
 if raining:
    carry umbrella
-
+```
 
 2) simple if-else condition
 
  in cases where the if fails or the condition in IF is False then the alternative should be executed, the Else block is the alternative
 
 
-
+```python
 if <Condition>:
 	Execute this block only when 
     the condition in if block is TRUE
@@ -507,7 +511,7 @@ if it_is_raining:
 else:
     Go on bike
 
-
+```
 
 else will not have any condition and will be only executed in the scenarios when the condition in if is false
 
@@ -544,7 +548,7 @@ if-elif
 There will be only one if block and there can be any number of elif blocks
 elif - (else if)a combination of both else & if which takes a condition unlike else block
 
-
+```python
 if <condition>:
     Code to be executed when the condition is True
 
@@ -569,7 +573,7 @@ elif <condition>:
 else :
       Code to be executed when all the above conditions are not met
 
-
+```
 
 
 
@@ -801,7 +805,7 @@ each_item - Temp Variable / Loop Variable
 
 
 
-
+```python
 ['brinjal', 'okra', 'bottleguard', 'kothmir']
 
 
@@ -880,10 +884,13 @@ for each in "123456":
 create an account on github.com 
 
 
+```
 
 
-
-[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99]
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 
+25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48,
+49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73,
+74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99]
 
 
 
@@ -931,9 +938,6 @@ if the value is present, it returns True or False if it doesnt
 
 
 :) :D :x 
-
-
-
 
 
 
@@ -1026,23 +1030,23 @@ library - msoffice
 
 
 import - we use import keyword to import a package into our current program
-
+```python
 import <packageName>
 
 import msoffice
 
-
+```
 once the package is imported, we can call its functionalites using . operator
 
 if we want to use word then we can call it from msoffice
 
-
+```python
 ImportedPackageName.function(arg)
 
 msoffice.word()
 msoffice.ppt()
 
-
+```
 
 
 Python has a lot of builtin libraries which we call as Standard Libaries whih offers multiple functionalities
