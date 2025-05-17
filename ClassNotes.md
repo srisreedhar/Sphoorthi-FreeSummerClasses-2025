@@ -967,6 +967,101 @@ the initial values as 0, based on the occurances of a value in collection the 0 
 
 
 
+### Indexing - extracting sub-groups from a string
+
+: - continuation operator
+
+to extract a single value , String[IndexNumber]
+
+to extract a sub-group or collection of values / multiple values from a string
+
+String[StartIndexNumber : StopIndexNumber]
+String[0:10] - will extract values from 0 - 9(10-1)
+
+Indexing always returns the (StopIndexNumber-1) values
+
+
+
+age(Stock/Raw columns)     age<30 ( derived variables/columns/values / features KPI)
+
+10                          True
+20                          True
+31                          False
+35                          False
+
+
+- Dictionary 
+- Functions
+- Packages & imports
+
+
+### Files - 
+
+
+
+### Packages / Libraries / Modules
+
+
+- collection of commands / programs which are packed as a single module/package
+- we can call them into our program and use their functionalities, we dont have to create the functions again
+
+
+- you create a program with 10 functionalities and you use them for some tasks
+- if any of your friend is performing the same taks, they need to create code for the same functionalities
+- instead, if you share your functions/file with them they can import/call the functions into their program
+and use them
+
+
+
+
+
+### methods to import Packages / Libraries / Modules
+
+library - msoffice
+                - word
+                - ppt
+                - onenote
+                - paint
+                - excel
+
+
+import - we use import keyword to import a package into our current program
+
+import <packageName>
+
+import msoffice
+
+
+once the package is imported, we can call its functionalites using . operator
+
+if we want to use word then we can call it from msoffice
+
+
+ImportedPackageName.function(arg)
+
+msoffice.word()
+msoffice.ppt()
+
+
+
+
+Python has a lot of builtin libraries which we call as Standard Libaries whih offers multiple functionalities
+
+- os module/library
+- lets us interact with the operating system
+- we can operate on files/folders/paths/ print the contents of a folder
+
+- if we want to find how many functions are avaialble in a package that you have imported
+run dir() on it
+
+
+import os
+
+
+-getcwd() : get current working directory()
+-chdir()  : change to a different directory
+-mkdir()   : create a folder/directory
+listdir()  : list all the content in a directory
 
 
 
