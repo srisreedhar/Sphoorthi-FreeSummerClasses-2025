@@ -1132,15 +1132,16 @@ DictionaryName[KeyName]
 d['string']
 'Sphoorthi'
 ```
-# add new key value pairs to a dictionary
+### add new key value pairs to a dictionary
 
  - if you want to add a new value to an existing dictionary, you always have to add a pair to it
  - we define a key and a value at the same time.
-
+ - 
+```python
  DictionaryName[NewKey] = 'NewValue'
+```
 
-
- # print all the keys
+ ### print all the keys
 ```python
  DictionaryName.keys()
 ```
@@ -1178,19 +1179,18 @@ d['string']
 
  API is an interface between the End users and the DataBase whch guards data with security protocols and shared only what is demanded based on authorization
 
-
+```json
 {
 'sandles':1220,
 'idly rava':100,
 'jeans':1111
 }
-
+```
 
 -> cart ( aws dynamodb )
 
 Example : https://api.github.com/users/srisreedhar
-
-            https://api.github.com/users
+https://api.github.com/users
 
 
 
@@ -1225,7 +1225,7 @@ Example : https://api.github.com/users/srisreedhar
 
 
 
-- JSON, Mongodb, Dynamodb, APIs
+` JSON, Mongodb, Dynamodb, APIs`
 
 
 
