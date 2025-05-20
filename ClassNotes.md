@@ -1068,5 +1068,251 @@ import os
 listdir()  : list all the content in a directory
 
 
+# Dictionary
+
+```python
+{
+'science' : 90,
+'social' : 10,
+'hindi' : 30,
+'telugu' : 99,
+'english' : 70,
+'maths' : 99
+}
+```
+
+- labels
+  value identifiers
+  - hash maps
+  - associative arrays
+
+ - Key & Value stores
+    - keys are labels/identifiers of the data
+    - values can be anything, int, str, list, tuple, dictionary 
+    - a single value in dictionary is a kv pair (key value pair)
+    - keys are unique and they should be unique
+    - values can be duplicated
+
+    - keys should be strings
+
+```python
+
+{
+    "list_data" : [1,2,3,4,5,6,7,8,9],
+    "tuple_data" : (1,2,3,4,5,6),
+    'int_data' : 1111,
+    "string": "Sphoorthi",
+    "anthr_dict" : { 'a':1,
+                      "b":2
+                      },
+    "keys" : "values"
+}
+
+
+e= { 'a':111,
+     'a':222,
+     'b':333
+     }
+
+e
+{'a': 222, 'b': 333}
+
+```
+
+- if there are duplicate key names or same key names with different values
+then python considers the latest defination and ignores previous value
+
+
+
+
+Extracting values fron a Dictionary
+```python
+DictionaryName[KeyName]
+
+d['string']
+'Sphoorthi'
+```
+# add new key value pairs to a dictionary
+
+ - if you want to add a new value to an existing dictionary, you always have to add a pair to it
+ - we define a key and a value at the same time.
+
+ DictionaryName[NewKey] = 'NewValue'
+
+
+ # print all the keys
+```python
+ DictionaryName.keys()
+```
+ # print all the values
+```python
+ DictionaryName.values()
+```
+
+
+
+ # API - Application Programming Interface
+
+ - the data sharing protocol
+
+```python
+ [
+ {
+  'company':'nike',
+  'contact':"maria anders",
+  'country':'Germany'
+  },
+ {
+  'company':'adidas',
+  'contact':"fransicico",
+  'country':'mexico'
+  },
+  {
+  'company':'maggi',
+  'contact':"roalnd",
+  'country':'austria'
+  }
+  ]
+
+```
+
+ API is an interface between the End users and the DataBase whch guards data with security protocols and shared only what is demanded based on authorization
+
+
+{
+'sandles':1220,
+'idly rava':100,
+'jeans':1111
+}
+
+
+-> cart ( aws dynamodb )
+
+Example : https://api.github.com/users/srisreedhar
+
+            https://api.github.com/users
+
+
+
+
+
+# Associated arrays / Dictionary
+
+    - values -> associated with a Label
+    - duplicates
+    - values are reffered using that label
+    - values are retrieved using that label
+    - these labels are known as Keys
+    - keys are unique in a dictionary
+    - value can be anything
+
+    - a single value is a Key-value pair in a dictionary 
+      ( single - single pair, single country, single group, single constellation)
+
+    - values will only exist with Keys in dictionary
+    so, if you're creating a value in a dictionary, you need to create a key first and then associate values with it
+
+    - Dictionaries are unordered data structures, the data is not organized inside the dictionary
+
+    - we can retrieve calues based on the Keys
+    - Keys should always be Strings
+
+    - Dictionaries are mutable datastructures
+    - create a new dictionary using {}
+    - dict, dict() 
+
+
+
+
+
+- JSON, Mongodb, Dynamodb, APIs
+
+
+
+### adding  a new key value pair
+
+ - if you want to add a new value to an existing dictionary, you always have to add a pair to it
+ - we define a key and a value at the same time.
+  -- creating an association with the Key and Value
+
+ DictionaryName[NewKey] = 'NewValue'
+
+ class5['NewStudent'] = 'NewStudent Name'
+
+ Restaurent['Veg Menu'] = 'Sambar'
+
+
+
+```python
+
+### printing/ extracting / accessing values from a dictionary
+
+details =   {
+  'company':'maggi',
+  'contact':"roalnd",
+  'country':'austria'
+  }
+
+  # extract/access maggi
+
+  1)  DictionaryName['KeyName']
+
+  2) DictionaryName.get('KeyName')
+
+  details.get('projects')
+'Business Intelligence'
+
+
+details['project']
+Traceback (most recent call last):
+  File "<pyshell#151>", line 1, in <module>
+    details['project']
+KeyError: 'project'
+
+
+
+details.get('project')
+
+
+details.get('project',"Check the Key Name properly")
+'Check the Key Name properly'
+
+
+
+
+# Print all the keys 
+DictionaryName.keys() -> prints all the keys as a dict object
+
+
+# Print all the values 
+DictionaryName.values() -> prints all the values as a dict object
+
+```
+
+# remove values from a Dicitonary
+
+```python
+DictionaryName.pop(KeyName) 
+```
+
+pop takes keyname as argument/arg and removes that KV pair, it returns the value of the Keyname/arg
+
+```python
+details.pop('contact')
+'roalnd'
+```
+
+
+- Nested Dictionaries
+
+
+
+list = []
+
+tuples = ()
+
+Dictioanries = {}
+
+
 
 
