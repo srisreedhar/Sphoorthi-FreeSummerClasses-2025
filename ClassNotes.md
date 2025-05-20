@@ -607,7 +607,7 @@ then they're eligible for free govt scheme
 
 
 ### Logic gating / conditional chaining
-
+### [Class Notes - And-OR-Operators-ClassWorkout.py ](https://github.com/srisreedhar/Sphoorthi-FreeSummerClasses-2025/blob/main/And-OR-Operators-ClassWorkout.py)
 
 we chain all the conditions using AND & OR
 
@@ -973,6 +973,7 @@ the initial values as 0, based on the occurances of a value in collection the 0 
 
 ### Indexing - extracting sub-groups from a string
 
+
 : - continuation operator
 
 to extract a single value , String[IndexNumber]
@@ -1198,6 +1199,7 @@ https://api.github.com/users
 
 
 # Associated arrays / Dictionary
+### [Class Notes - ClassWorkout-Dictionaries.py ](https://github.com/srisreedhar/Sphoorthi-FreeSummerClasses-2025/blob/main/ClassWorkout-Dictionaries.py)
 
     - values -> associated with a Label
     - duplicates
