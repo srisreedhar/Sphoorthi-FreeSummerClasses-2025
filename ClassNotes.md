@@ -1145,7 +1145,7 @@ d['string']
 ```python
  DictionaryName.keys()
 ```
- # print all the values
+ ### print all the values
 ```python
  DictionaryName.values()
 ```
@@ -1155,6 +1155,7 @@ d['string']
  # API - Application Programming Interface
 
  - the data sharing protocol
+ - Serialized Data
 
 ```python
  [
@@ -1235,12 +1236,13 @@ https://api.github.com/users
  - we define a key and a value at the same time.
   -- creating an association with the Key and Value
 
+```python
  DictionaryName[NewKey] = 'NewValue'
 
  class5['NewStudent'] = 'NewStudent Name'
 
  Restaurent['Veg Menu'] = 'Sambar'
-
+```
 
 
 ```python
@@ -1289,7 +1291,7 @@ DictionaryName.values() -> prints all the values as a dict object
 
 ```
 
-# remove values from a Dicitonary
+### remove values from a Dicitonary
 
 ```python
 DictionaryName.pop(KeyName) 
