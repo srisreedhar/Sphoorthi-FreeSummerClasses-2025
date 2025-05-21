@@ -1320,3 +1320,93 @@ Dictioanries = {}
 
 
 
+# Files :
+         - locate the file ( go to the folder where the file is located)
+         - Open the file
+         - read the file content || write something to the file || read and write something to the file
+         - close the file
+
+
+### Types of Files :
+
+         - Text files, CSV files -> open with a notepad
+         - Excel Files, PDF files -> respective softwares ( MS Excel , Acrobat Reader ..)
+                   ( - binary files )
+
+
+
+### File Operation Functions
+
+open() - this function opens the file
+         - this function takes 2 arguments, FilePath/FileName & AccessMode
+
+         open("FileName","AccessMode")
+
+        _ this function when executed will return a file_object, the file object needs to be saved and should be read to read the content of the file
+
+        - we save the file_object in a variable and use that variable for all the later workflows
+
+        - if we did not specify any modes when opening the file, by default it considers read-only mode ( r )
+
+
+.read() - we use .read() method on the file_object to read its content. We need to apply this on file_Object
+
+
+.close()  - once the operations are complete with the files, we close the opened file with .close() method
+            we apply .close() on the file_object that we opned using open()
+
+
+```python
+f = open("FileName")
+content=f.read()
+print(content)
+f.close()
+```
+
+
+
+
+### File Access modes
+
+read only-  "r"
+
+write -  "w"
+
+append -  "a"
+
+read & write - "r+"
+
+read & write binary  - "rb+"
+
+
+
+```python
+
+f = open("FileName", 'r')
+content=f.read()
+print(content)
+f.close()
+
+```
+
+
+### Write operations on Files
+
+
+.write("content") - we use write method to write content to the file.
+                  - we apply this method on file_object
+
+                  - if the file is opened in write mode, then all the existing content would be deleted 
+
+                  - so, if you want to add content to existing content in the file, then use 'a' (append) mode
+
+
+```python
+
+f = open("FileName", 'w')
+f.write("have a great day ahead")
+f.close()
+
+```
+
+
