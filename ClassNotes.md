@@ -1443,7 +1443,7 @@ import msoffice
 ```
 once the package is imported, we can call its functionalites using . operator
 
-if we want to use word then we can call it from msoffice
+if we want to use word then we can call it from msoffice, 
 
 ```python
 ImportedPackageName.function(arg)
@@ -1456,6 +1456,8 @@ from /values.py file -
 values.numbers
 values.marks
 ```
+
+### [Class Notes - values.py ](https://github.com/srisreedhar/Sphoorthi-FreeSummerClasses-2025/blob/main/values.py)
 we call this as NameSpacing
 
 
