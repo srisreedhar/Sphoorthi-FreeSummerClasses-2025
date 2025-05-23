@@ -1409,4 +1409,165 @@ f.close()
 
 ```
 
+# Packages / Libraries / Modules
+
+
+- collection of commands / programs / values which are packed as a single module/package / python file
+- we can call them into our program and use their functionalities, we dont have to create the functions or defining values again
+
+
+- you create a program with 10 functionalities/values and you use them for some tasks
+- if any of your friend is performing the same taks, they need to create code for the same functionalities
+- instead, if you share your functions/file with them they can import/call the functions into their program
+and use them
+
+
+### methods to import Packages / Libraries / Modules
+
+
+library - msoffice
+                - word
+                - ppt
+                - onenote
+                - paint
+                - excel
+
+
+import - we use import keyword to import a package/file/library into our current program
+
+```python
+import <packageName/LibraryName/FileName/ProgramName>
+
+import msoffice
+
+```
+once the package is imported, we can call its functionalites using . operator
+
+if we want to use word then we can call it from msoffice
+
+```python
+ImportedPackageName.function(arg)
+ImportedFileName.Value
+
+msoffice.word()
+msoffice.ppt()
+
+from /values.py file - 
+values.numbers
+values.marks
+```
+we call this as NameSpacing
+
+
+
+kcr   TRS.kcr
+ktr   TRS.ktr
+pvr    congrass.pvr
+
+js   bjp.js
+css  bjp.css
+
+
+
+## Selective Imports
+### Second form of Importing, what is needed
+
+Instead of importing everything into a program, 
+using below syntaxes we only import what is required
+
+```python
+from PackageName import FunctionName
+from PackageName import value
+
+
+from PackageName import value1,value2,value3..
+```
+
+
+# if we want to give our own namespaces/names to the packages that we are importing into our program
+```
+from values import aadhar_num as an
+```
+
+Python has a lot of builtin libraries which we call as Standard Libaries whih offers multiple functionalities
+
+- os module/library
+- lets us interact with the operating system
+- we can operate on files/folders/paths/ print the contents of a folder
+
+- if we want to find how many functions are avaialble in a package that you have imported
+run dir() on it
+
+List of all Standard Libraries : https://docs.python.org/3/py-modindex.html
+
+
+import os
+
+
+-getcwd() : get current working directory()
+-chdir()  : change to a different directory
+-mkdir()   : create a folder/directory
+listdir()  : list all the content in a directory
+
+
+
+## How to install External Libraries ? / 3rd Party Libraries
+
+we use a Package Manager to manage all the packages (PIP)
+
+Managing ? -
+            Installing
+            updating
+            deleting
+
+pip is the package manager using which we can manage packages
+always refer to respective package webpage or PYPI page for package information
+
+```python
+pip install PackageName
+```
+
+# Connecting to internet 
+# we use requests library to connect to internet and perform tass which needs connectivity
+
+
+### handling requests - responses
+
+```python
+import requests
+```
+- we need to send the request to open a resource using get method.
+
+```python
+requests.get(url)
+```
+.get() method- this method will take a url and returns a response object
+
+we need to store this response object in a variable so that we apply all the other methods on that response obj
+
+
+resp = requests.get(url) - we use resp varaible for all the later operations
+
+
+resp.text - this method will read the response object and extracts the test from it
+
+resp.content - this methods returns the data in the form of byte stream
+
+
+
+```python
+
+import requests
+resp = requests.get(URL)
+data = resp.text
+
+
+import requests as r
+resp = r.get(URL)
+data = resp.text
+
+
+```
+
+
 
