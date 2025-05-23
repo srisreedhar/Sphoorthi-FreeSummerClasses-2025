@@ -1458,6 +1458,7 @@ values.marks
 ```
 
 ### [Class Notes - values.py ](https://github.com/srisreedhar/Sphoorthi-FreeSummerClasses-2025/blob/main/values.py)
+### [Class Notes - importing from values.py ](https://github.com/srisreedhar/Sphoorthi-FreeSummerClasses-2025/blob/main/import-testing.py)
 we call this as NameSpacing
 
 
@@ -1502,7 +1503,7 @@ run dir() on it
 
 List of all Standard Libraries : https://docs.python.org/3/py-modindex.html
 
-
+```
 import os
 
 
@@ -1511,7 +1512,7 @@ import os
 -mkdir()   : create a folder/directory
 listdir()  : list all the content in a directory
 
-
+```
 
 ## How to install External Libraries ? / 3rd Party Libraries
 
