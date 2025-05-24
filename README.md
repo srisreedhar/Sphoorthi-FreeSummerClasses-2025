@@ -21,6 +21,7 @@ URL : https://sites.google.com/view/sphoorthi-oum
 - The Class Workout files are uploaded in this Repository,
 - Class Recordings were shared in the Whatsapp Group.
 - Class Notes [ClassNotes](https://docs.google.com/document/d/1exuwaigKQLFLG9TanSA6nph8EzTdPz_rfu7hghXn7fA/) is created that has all the Class's running Notes. <br>
+- [Updated CLASS NOTES](https://github.com/srisreedhar/Sphoorthi-FreeSummerClasses-2025/blob/main/ClassNotes.md)
   
 
 Am grateful to His Holiness, Sri Sri Sri Guru ViswaSphoorthi, for blessing us all with this oppertunity to come together and learn something new.
