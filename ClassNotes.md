@@ -1572,5 +1572,42 @@ data = resp.text
 
 ```
 
+### install Jupyter notebook
+    -- https://jupyter.org/
+    -- https://jupyter.org/install#jupyter-notebook
+        --- pip install notebook
 
+Dataset : (Animal - Sleep time)[https://raw.githubusercontent.com/srisreedhar/DataSets/refs/heads/master/animal_sleeptime_ggplot2.csv]
+
+# Function
+
+    a small programs which are saved with an alias/identifier
+    few lines of code / code block which has a name and when the name is called the code block is executed.
+    we can call the functionality multiple times using the alias 
+
+
+
+### How to create a Function ?
+
+we use def keyword to define/create a function, every function returns a value, for which we use return keyword
+
+```python
+def functionName(arg1,arg2,arg3):
+    write code on arg1, arg2 ..
+    write code using args
+    we get result
+    return result
+
+```
+
+# create a function that takes 2 numbers and returns the sum of the 2 numbers
+
+```python
+def sumof2(num1,num2):
+    total = num1+num2
+    return total
+
+```
+
+Code Reusability
 
