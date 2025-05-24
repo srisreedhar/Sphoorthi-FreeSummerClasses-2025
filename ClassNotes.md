@@ -1600,7 +1600,7 @@ def functionName(arg1,arg2,arg3):
 
 ```
 
-# create a function that takes 2 numbers and returns the sum of the 2 numbers
+#### create a function that takes 2 numbers and returns the sum of the 2 numbers
 
 ```python
 def sumof2(num1,num2):
