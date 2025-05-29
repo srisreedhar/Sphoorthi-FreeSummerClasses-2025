@@ -1611,3 +1611,126 @@ def sumof2(num1,num2):
 
 Code Reusability
 
+# Dictionary Methods
+
+
+#### Print all the keys 
+```
+DictionaryName.keys() -> prints all the keys as a dict object
+```
+
+#### Print all the values 
+```
+DictionaryName.values() -> prints all the values as a dict object
+```
+
+#### remove values from a Dicitonary
+```
+DictionaryName.pop(KeyName) 
+```
+pop takes keyname as argument/arg and removes that KV pair, it returns the value of the Keyname/arg
+```
+details.pop('contact')
+'roalnd'
+```
+
+
+#### printing/ extracting / accessing values from a dictionary
+```python
+details =   {
+  'company':'maggi',
+  'contact':"roalnd",
+  'country':'austria'
+  }
+```
+```python
+  # extract/access maggi
+
+  1)  DictionaryName['KeyName']
+
+  2) DictionaryName.get('KeyName')
+
+>>> details.get('projects')
+'Business Intelligence'
+```
+```python
+>>> details['project']
+Traceback (most recent call last):
+  File "<pyshell#151>", line 1, in <module>
+    details['project']
+KeyError: 'project'
+
+>>> details.get('project')
+
+
+>>> details.get('project',"Check the Key Name properly")
+'Check the Key Name properly'
+
+```
+
+
+
+
+#### Update
+
+appends all the KV pairs from one dictionary into another
+```python
+first = {'a':100}
+second={'z':900}
+
+first
+{'a': 100}
+second
+{'z': 900}
+
+first.update(second)
+first
+{'a': 100, 'z': 900}
+
+
+#### clear
+#### to empty a dictioanry
+
+first
+{'a': 100, 'z': 900}
+first.clear()
+first
+{}
+
+```
+
+```python
+{
+'sandles':1220,
+'idly rava':100,
+'jeans':1111,
+'fruit':'apple',
+'cooldrink':'butter milk'
+}
+```
+
+#### Looping in dictioanry
+
+When we apply for-loop on a dict, it loops over the keys.
+to loop over on both keys & values at the same time, we use .items() method and apply loop on 
+dictionary.items()
+```python
+for each_key,each_value in sample.items():
+    print(each_key," --",each_value)
+```
+
+we need to create 2 loop variables / Temp variables . one for keys and one for values
+        
+        each_key -- handles all the keys,
+        each_value -- handles all the values
+
+
+IF you're trying to loop over a dictioanry, 
+    first, confirm if you want to loop over just keys or values and use .keys() or .values() accordingly
+
+    Lastly, if you want to simultaneously apply loop on both keys and values,
+         then use .items()
+
+        - cases when there is a collection of dictionaries, with the same key arrangement, use items
+
+
