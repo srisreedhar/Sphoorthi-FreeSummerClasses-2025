@@ -1654,6 +1654,8 @@ details =   {
 'Business Intelligence'
 ```
 ```python
+ 
+If we give the wrong key name -->  KeyError
 >>> details['project']
 Traceback (most recent call last):
   File "<pyshell#151>", line 1, in <module>
@@ -1662,7 +1664,7 @@ KeyError: 'project'
 
 >>> details.get('project')
 
-
+We can supply a default value which runs when its a KeyError
 >>> details.get('project',"Check the Key Name properly")
 'Check the Key Name properly'
 
