@@ -1737,7 +1737,7 @@ IF you're trying to loop over a dictioanry,
 
 
 
- #### set default
+ #### Dictionary.set default('Key','value')
  ```python
  sample.setdefault('jeans','pepe')
 1111
