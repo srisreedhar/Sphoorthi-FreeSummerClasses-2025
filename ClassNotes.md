@@ -1736,3 +1736,26 @@ IF you're trying to loop over a dictioanry,
         - cases when there is a collection of dictionaries, with the same key arrangement, use items
 
 
+
+ #### set default
+ ```python
+ sample.setdefault('jeans','pepe')
+1111
+ 
+ sample
+{'sandles': 1220, 'idly rava': 100, 'jeans': 1111, 'fruit': 'apple', 'cooldrink': 'butter milk'}
+ 
+>>> sample
+{'sandles': 1220, 'idly rava': 100, 'jeans': 1111, 'fruit': 'apple', 'cooldrink': 'butter milk'}
+>>> 
+>>> sample.setdefault("new key","new value")
+'new value'
+>>> 
+>>> sample
+{'sandles': 1220, 'idly rava': 100, 'jeans': 1111, 'fruit': 'apple', 'cooldrink': 'butter milk', 'new key': 'new value'}
+>>> 
+>>>
+```
+setdefaut returns the value of a key and its value if the key is present in the dictionary,
+if the key is not present then setdefault creates a key-value pair
+if the key is already present in the ditioanry then it wont disturb the existing key value pair
