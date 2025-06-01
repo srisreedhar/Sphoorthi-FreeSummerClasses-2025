@@ -1898,7 +1898,8 @@ importing with a global alias
                 Document the Inference
 
 
-pd.DataFrame - Pandas datastructure    
+#### pd.DataFrame 
+	     - Pandas datastructure     
              - spreadsheet like structure that oraganizes rows and columns like a matrix or an excelsheet    
              - a table will have rows and columns     
              - columns will have column names    
