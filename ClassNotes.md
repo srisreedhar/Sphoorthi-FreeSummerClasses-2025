@@ -1819,4 +1819,111 @@ for row in csv_reader: we use for-loop to loop over every ROW in the csvfile and
 **DictReader** : This method allows us to read the data as a dictionary
 
 
+# Pandas 
+        Data Analysis Library
+        pandas is a Framework to handle data related operations
+
+
+
+Pandas - 2 Data structures
+            - series
+            - dataframe
+
+            these data structures would help us manage data operations.
+            they've a veriety of methods which are applicable on the data
+
+            series is similar to a column
+            dataframe is a tabular structure with multiple columns like a spreadsheet
+
+
+installation of Pandas :
+
+                pip install pandas
+
+
+importing with a global alias
+
+
+                import pandas as pd
+
+
+
+
+
+Data Analysis 
+
+             Data analysis is a methodical 
+
+             Part -1 : process of examining and interpreting data,
+                        cleaning
+
+             part -2 : to uncover hidden patterns, draw conclusions, and support decision-making
+                        visualizations
+
+
+
+            Steps involved in Handling data using Pandas
+
+                Inspecting the Data
+                        - knowing everything about data, the columns, rows, missing values,
+                          data types, wrong data types, dates
+
+                Fixing them
+                            missing values
+                                    - if we have to include missing values or impute them
+                                    - fixing data types
+                                    - fixing dates if any
+                                    - chnging the formats of strings
+                                    - splittinf the data
+                                    - join other data sets
+                                    - select subgroup from the data ( sampling )
+
+                know the Data
+                        - we try to understand the data by applying aggregations, statistical methods and 
+                         anything related.
+                         - inferential statistics
+                            - relationships
+                            - correlations
+                            - dependencies
+                            - counter variables*
+
+                visualize the data
+                            - repetitions
+                            - proportions
+                            - distributions
+                            - outliers
+                            - spread
+
+
+                Document the Inference
+
+
+pd.DataFrame - Pandas datastructure
+             - spreadsheet like structure that oraganizes rows and columns like a matrix or an excelsheet
+             - a table will have rows and columns,
+             - columns will have column names
+             - rows will have the row data
+
+             - column names acts as the alias for the entire column data
+
+
+
+pd.read_csv(filename.csv,parse_dates=[date1,date2,...])
+
+read_csv is the file method in pandas that reads the csv file and outputs a DATAFRAME obj
+
+parse_Dates - this argument identifies if there are any dates and treats them as dates.
+
+
+
+To create a Dataframe we use below syntax
+
+pd.DataFrame(newdata)
+
+pd.DataFrame(['brinjal', 'okra', 'bottleguard', 'kothmir'])
+
+
+pd.DataFrame(['brinjal', 'okra', 'bottleguard', 'kothmir'],columns=['Names'])
+
+columns=['Names'] is an argument that takes a name and assigns to a column in a dataframe
 
