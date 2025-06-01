@@ -1759,3 +1759,62 @@ IF you're trying to loop over a dictioanry,
 setdefaut returns the value of a key and its value if the key is present in the dictionary,
 if the key is not present then setdefault creates a key-value pair
 if the key is already present in the ditioanry then it wont disturb the existing key value pair
+
+
+### CSV Module
+
+csv - comma seperated values : file format
+    - all the values are coma seperated
+    - all the values are in string format
+
+
+csv module - standard library
+
+Opening a csv file
+Reading a csv
+    - reading it as a dictionary
+writing a csv
+
+
+with - context manager
+       used for file operations
+       using with we can open-operate-close a file
+       using with will create a code block and helps us organize all our file related operations
+       in the same block.
+       file closes and everything will be taken care by with
+
+
+    with open(FILENAME,'ACCESS MODE') as file_alias:
+         operations on file_alias
+
+
+In Python, the File Handling process
+ ```python
+ filehandler = open(filename,accessmode)
+ data = filehandler.read()
+ filehandler.close()
+
+  with open(FILENAME,'ACCESS MODE') as filehandler:
+         operations on filehandler
+```
+Using CSV Module
+
+```python
+import csv
+
+with open(filename,accessMode) as csvfile:
+    csv_reader = csv.reader(csvfile)
+    for row in csv_reader:
+        print(row)
+```
+
+csv.reader(csvfile) - a csv file reader method imported from CSV module
+                      this creates a csv file object which will have all the file data
+                      all the remaining operations are to be done on this csv object
+
+for row in csv_reader: we use for-loop to loop over every ROW in the csvfile and performa any operation
+
+DictReader : This method allows us to read the data as a dictionary
+
+
+
