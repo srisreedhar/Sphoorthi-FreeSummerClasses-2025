@@ -1850,7 +1850,7 @@ importing with a global alias
 
 
 
-Data Analysis 
+# Data Analysis - Generic Framework    
 
              Data analysis is a methodical 
 
@@ -1898,17 +1898,18 @@ Data Analysis
                 Document the Inference
 
 
-pd.DataFrame - Pandas datastructure
-             - spreadsheet like structure that oraganizes rows and columns like a matrix or an excelsheet
-             - a table will have rows and columns,
-             - columns will have column names
-             - rows will have the row data
+pd.DataFrame - Pandas datastructure    
+             - spreadsheet like structure that oraganizes rows and columns like a matrix or an excelsheet    
+             - a table will have rows and columns     
+             - columns will have column names    
+             - rows will have the row data    
 
              - column names acts as the alias for the entire column data
 
 
-
+```python
 pd.read_csv(filename.csv,parse_dates=[date1,date2,...])
+```
 
 read_csv is the file method in pandas that reads the csv file and outputs a DATAFRAME obj
 
@@ -1917,7 +1918,7 @@ parse_Dates - this argument identifies if there are any dates and treats them as
 
 
 To create a Dataframe we use below syntax
-
+```python
 pd.DataFrame(newdata)
 
 pd.DataFrame(['brinjal', 'okra', 'bottleguard', 'kothmir'])
@@ -1926,4 +1927,4 @@ pd.DataFrame(['brinjal', 'okra', 'bottleguard', 'kothmir'])
 pd.DataFrame(['brinjal', 'okra', 'bottleguard', 'kothmir'],columns=['Names'])
 
 columns=['Names'] is an argument that takes a name and assigns to a column in a dataframe
-
+```
