@@ -1763,20 +1763,20 @@ if the key is already present in the ditioanry then it wont disturb the existing
 
 ### CSV Module
 
-csv - comma seperated values : file format
-    - all the values are coma seperated
-    - all the values are in string format
+csv - comma seperated values : file format   
+    - all the values are coma seperated   
+    - all the values are in string format   
 
 
 csv module - standard library
 
-Opening a csv file
-Reading a csv
-    - reading it as a dictionary
-writing a csv
+-Opening a csv file    
+-Reading a csv    
+    - reading it as a dictionary    
+-writing a csv    
 
 
-with - context manager
+**with - context manager**
        used for file operations
        using with we can open-operate-close a file
        using with will create a code block and helps us organize all our file related operations
@@ -1808,13 +1808,15 @@ with open(filename,accessMode) as csvfile:
         print(row)
 ```
 
-csv.reader(csvfile) - a csv file reader method imported from CSV module
-                      this creates a csv file object which will have all the file data
-                      all the remaining operations are to be done on this csv object
+ **csv.reader(csvfile)**     
+ 
+> a csv file reader method imported from CSV module     
+> this creates a csv file object which will have all the file data    
+> all the remaining operations are to be done on this csv object    
 
-for row in csv_reader: we use for-loop to loop over every ROW in the csvfile and performa any operation
+for row in csv_reader: we use for-loop to loop over every ROW in the csvfile and performa any operation <br> <br>
 
-DictReader : This method allows us to read the data as a dictionary
+**DictReader** : This method allows us to read the data as a dictionary
 
 
 
