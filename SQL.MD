@@ -12,7 +12,7 @@
 [Sqlite DB GUI Tool for handling DB](https://sqlitebrowser.org/)   
 ` Use this GUI tool to load the Chinook DataBase`
 
-### SQL syntaxes we used in the class
+### SQL syntaxes we use in the class
 
 
 [SQL Create DB](https://www.w3schools.com/sql/sql_create_db.asp)  
