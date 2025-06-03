@@ -1961,3 +1961,25 @@ columns=['Names'] is an argument that takes a name and assigns to a column in a 
        - df.tail(8)
 
 
+**df.describe()**
+
+    - description of the data
+    - summary statistics / descriptive statistics of the dataset/dataframe
+
+
+**df.isnull()**
+
+    - tells us about the null values, if any ,in the dataset
+    - gives a dataframe of boolean values
+    - should always apply an aggregation on this to get the totals of booleans
+
+
+
+**df.isnull().sum()**
+
+    - df.isnull() returns a dataset with boolean values,
+    - where ever there is data, the location/cell/value is marked/masked as True and where ever there are __null/NA/Nan__ values
+    - that is marked as False
+
+
+
