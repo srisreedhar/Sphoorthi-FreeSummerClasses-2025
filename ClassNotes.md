@@ -1929,3 +1929,32 @@ pd.DataFrame(['brinjal', 'okra', 'bottleguard', 'kothmir'],columns=['Names'])
 
 columns=['Names'] is an argument that takes a name and assigns to a column in a dataframe
 ```
+
+
+
+#### Pandas Methods
+
+**df.shape** 
+
+    - tells about shape of data    
+    -  outputs as (rows,columns)     
+    -  m x n format    
+    - rows x columns 
+
+
+
+**df.info()**
+     - coloumn names/rows    
+     - Tells us the number of rows, columns, missing values
+
+**df.head()** or **df.head(8)**
+        - the first and last few rows of the data    
+        - df.head(integer) by default when no arg is given returns first 5 values     
+.
+
+***df.tail()**
+        - the first and last few rows of the data    
+        - df.tail(integer) by default when no arg is given returns first 5 values    
+        - df.tail(8)    
+
+
