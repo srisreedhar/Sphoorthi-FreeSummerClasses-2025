@@ -1932,9 +1932,9 @@ columns=['Names'] is an argument that takes a name and assigns to a column in a 
 
 
 
-### Pandas Methods
+## Pandas Methods
 
-**df.shape** 
+#### df.shape
 
     - tells about shape of data    
     -  outputs as (rows,columns)     
@@ -1943,31 +1943,31 @@ columns=['Names'] is an argument that takes a name and assigns to a column in a 
 
 
 
-**df.info()**
+####  df.info()
 
      - coloumn names/rows    
      - Tells us the number of rows, columns, missing values
 
-**df.head()** or **df.head(8)**
+####  df.head() or df.head(8)
 
     - the first and last few rows of the data    
     - df.head(integer) by default when no arg is given returns first 5 values     
 
 
-**df.tail()**
+####  df.tail()
 
        - the first and last few rows of the data    
        - df.tail(integer) by default when no arg is given returns first 5 values    
        - df.tail(8)
 
 
-**df.describe()**
+####  df.describe()
 
     - description of the data
     - summary statistics / descriptive statistics of the dataset/dataframe
 
 
-**df.isnull()**
+####  df.isnull()
 
     - tells us about the null values, if any ,in the dataset
     - gives a dataframe of boolean values
@@ -1975,7 +1975,7 @@ columns=['Names'] is an argument that takes a name and assigns to a column in a 
 
 
 
-**df.isnull().sum()**
+####  df.isnull().sum()
 
     - df.isnull() returns a dataset with boolean values,
     - where ever there is data, the location/cell/value is marked/masked as True and where ever there are __null/NA/Nan__ values
