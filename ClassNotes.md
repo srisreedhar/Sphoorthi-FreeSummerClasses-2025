@@ -1824,9 +1824,9 @@ for row in csv_reader: we use for-loop to loop over every ROW in the csvfile and
 
 
 
-Pandas - 2 Data structures
-            - series    
-            - dataframe    
+#### Pandas - 2 Data structures
+             - series    
+             - dataframe    
 
             these data structures would help us manage data operations.
             they've a veriety of methods which are applicable on the data
@@ -1979,6 +1979,118 @@ columns=['Names'] is an argument that takes a name and assigns to a column in a 
     - df.isnull() returns a dataset with boolean values,
     - where ever there is data, the location/cell/value is marked/masked as True and where ever there are __null/NA/Nan__ values
     - that is marked as False
+
+
+
+
+####  Extract Column Names
+
+    df.columns
+
+
+####  Select first 2 rows
+
+    df.iloc[:2]
+
+
+####  Select first 2 columns
+
+    df.iloc[:,:2]
+
+
+####  Select columns by name
+
+    df.loc[:,["col1","col2"]]
+
+
+####  Select random no. of rows
+
+    df.sample(n=10)
+
+
+####  Select fraction of random rows
+
+    df.sample(frac=0.2)
+
+
+####  Rename the variables
+
+    df.rename()
+
+
+####  Selecting a column as index
+
+    df.set_index()
+
+
+Removing rows or columns
+
+    df.drop()
+
+
+####  Sorting values
+ 
+    df.sort_values()
+
+
+####  Grouping variables
+
+    df.groupby()
+
+
+####  Filtering
+
+    df.query()
+
+
+####  Finding the missing values
+
+    df.isnull()
+
+
+####  Dropping the missing values
+
+    df.dropna()
+
+
+####  Removing the duplicates
+
+    df.drop_duplicates()
+
+
+####  Creating dummies
+
+    pd.get_dummies()
+
+
+####  Ranking
+
+    df.rank()
+
+
+####  Cumulative sum
+
+    df.cumsum()
+
+
+####  Quantiles
+
+    df.quantile()
+
+
+####  Selecting numeric variables
+
+    df.select_dtypes()
+
+
+####  Concatenating two dataframes
+    
+    pd.concat()
+
+
+####  Merging on basis of common variable
+
+    pd.merge()
 
 
 
