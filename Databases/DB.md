@@ -1,3 +1,5 @@
+```sql
+
 /*
 
 CUSTOMER                       PRODUCT
@@ -64,3 +66,4 @@ SALES_HISTORY
 
 
 */
+```
