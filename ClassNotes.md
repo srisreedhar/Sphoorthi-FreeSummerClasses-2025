@@ -1052,23 +1052,22 @@ msoffice.ppt()
 
 Python has a lot of builtin libraries which we call as Standard Libaries whih offers multiple functionalities
 
-- os module/library
-- lets us interact with the operating system
-- we can operate on files/folders/paths/ print the contents of a folder
+- os module/library    
+- lets us interact with the operating system    
+- we can operate on files/folders/paths/ print the contents of a folder    
 
-- if we want to find how many functions are avaialble in a package that you have imported
+- if we want to find how many functions are avaialble in a package that you have imported    
 run dir() on it
 
-
+``` python
 import os
 
+-getcwd() : get current working directory()    
+-chdir()  : change to a different directory    
+-mkdir()   : create a folder/directory    
+listdir()  : list all the content in a directory    
 
--getcwd() : get current working directory()
--chdir()  : change to a different directory
--mkdir()   : create a folder/directory
-listdir()  : list all the content in a directory
-
-
+```
 # Dictionary
 
 ```python
@@ -1463,12 +1462,12 @@ we call this as NameSpacing
 
 
 
-kcr   TRS.kcr
-ktr   TRS.ktr
-pvr    congrass.pvr
+kcr   TRS.kcr    
+ktr   TRS.ktr    
+pvr    congrass.pvr    
 
-js   bjp.js
-css  bjp.css
+js   bjp.js    
+css  bjp.css    
 
 
 
@@ -1487,7 +1486,7 @@ from PackageName import value1,value2,value3..
 ```
 
 
-# if we want to give our own namespaces/names to the packages that we are importing into our program
+#### if we want to give our own namespaces/names to the packages that we are importing into our program
 ```
 from values import aadhar_num as an
 ```
@@ -1531,7 +1530,7 @@ pip install PackageName
 ```
 
 # Connecting to internet 
-# we use requests library to connect to internet and perform tass which needs connectivity
+### we use requests library to connect to internet and perform tasks which needs Internet connectivity / connecting to web applications
 
 
 ### handling requests - responses
@@ -1609,7 +1608,7 @@ def sumof2(num1,num2):
 
 ```
 
-Code Reusability
+> Code Reusability
 
 # Dictionary Methods
 
@@ -1826,8 +1825,8 @@ for row in csv_reader: we use for-loop to loop over every ROW in the csvfile and
 
 
 Pandas - 2 Data structures
-            - series
-            - dataframe
+            - series    
+            - dataframe    
 
             these data structures would help us manage data operations.
             they've a veriety of methods which are applicable on the data
@@ -1836,12 +1835,12 @@ Pandas - 2 Data structures
             dataframe is a tabular structure with multiple columns like a spreadsheet
 
 
-installation of Pandas :
+#### installation of Pandas :
 
                 pip install pandas
 
 
-importing with a global alias
+#### importing with a global alias
 
 
                 import pandas as pd
