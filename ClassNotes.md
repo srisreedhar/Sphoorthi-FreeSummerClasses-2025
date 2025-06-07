@@ -2093,4 +2093,78 @@ Removing rows or columns
     pd.merge()
 
 
+## Important Topics to Learn
+
+
+####1) Comprehensions
+
+        numbers = [1,2,3,4,5,6,7,8,9]
+	add 100 to every number
+
+ 
+```python
+newlist=[]
+for everynumber in numbers:
+    t = everynumber + 100
+    newlist.append(t)
+
+
+[everynumber + 100 for everynumber in numbers]
+```
+
+
+Comprehensions - Colelction based, they minimize the use of loops and multiple collection related operations    
+
+		Dict Comprehensions , 
+  		Set comprehensions, 
+    		List Comprehensions
+
+
+
+2) Generators
+
+        example - range function
+       range() - generates numbers / produces numbers    
+       		 range takes 2 arguments, start integer and stop integer    
+   		it generates values from StartInteger till StopInteger-1    
+
+        	It generates values, it will have all the values and only returns when they're called    
+        	yield keyword    
+```python
+range(1,10001)
+range(1, 10001)
+
+len(range(1,10001))
+10000
+```
+
+
+3) Iterators - loops
+
+4) Iterables - collections which can be iterated.
+
+```python
+for i in 1234:
+    print(i)
+
+    
+Traceback (most recent call last):
+  File "<pyshell#37>", line 1, in <module>
+    for i in 1234:
+TypeError: 'int' object is not iterable
+
+```
+
+
+5) Functional Programming :
+
+        - lambda functions / anonymous functions
+        - map() - 2 arguments, one function and one collection and applies function on every value in the collection
+        - filter()
+        - reduce()
+        - Comprehentions ( List/Dict/Set )
+
+
+6) OOPS - designing classes
+
 
