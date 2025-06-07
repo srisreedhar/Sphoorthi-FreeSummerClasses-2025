@@ -2096,10 +2096,10 @@ Removing rows or columns
 ## Important Topics to Learn
 
 
-####1) Comprehensions
+1) Comprehensions
 
         numbers = [1,2,3,4,5,6,7,8,9]
-	add 100 to every number
+	   add 100 to every number
 
  
 ```python
