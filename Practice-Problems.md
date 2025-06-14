@@ -98,3 +98,149 @@
 ---
 
 
+# Python dictionaries
+
+---
+
+### 1. **Create and Update a Dictionary**
+**Problem**: Write a Python program to create a dictionary of 3 favorite Movies with their titles as keys and authors as values. Then:
+- Create an empty dictionary called Movies and then add all the movies one by one.
+- Do not create the Entire dictionary on a single go.
+- Add a new Movie to the dictionary.
+- Create a seperate List for Actors, Producers, Directors, Songs
+- Update the author of an existing Movie.
+- Remove a Movie by its title.
+- Print the final dictionary.
+
+**Apply these ->**: Dictionary creation, adding key-value pairs, updating values, `pop()` or `del`.
+
+---
+
+### 2. **Count Characters in a String**
+**Problem**: Write a function that takes a string as input and returns a dictionary where keys are characters and values are the number of times each character appears. For example, `"hello"` should return `{'h': 1, 'e': 1, 'l': 2, 'o': 1}`.
+
+**Hint**: Word counts, Iterate through the string and update counts in the dictionary.
+
+**Apply these ->**: Loops, dictionary updates, `get()` method (optional).
+
+---
+
+### 3. **Check for Key Existence**
+**Problem**: Write a program that takes a dictionary and a key as input and checks if the key exists in the dictionary. If it does, print its value; otherwise, print "Key not found." and create the key with its value. Precisely, Check if a Key exists in  dictioanry, if it doesnt then create a key and assign its value.
+
+**Hint**: Membership checking
+
+**Example Input**: `{"apple": 1, "banana": 2, "orange": 3}`, key: `"banana"`
+
+**Apply these ->**: Dictionary key access, `in` operator, conditionals.
+
+---
+
+### 4. **Merge Two Dictionaries**
+**Problem**: Write a function that takes two dictionaries and merges them into a single dictionary. If a key exists in both dictionaries, keep the value from the second dictionary. For example, `{"a": 1, "b": 2}` and `{"b": 3, "c": 4}` should return `{"a": 1, "b": 3, "c": 4}`.
+
+**Hint**: Use a loop or the `update()` method.
+
+**Apply these ->**: Dictionary merging, `update()`, loops.
+
+---
+
+### 5. **Find the Key with Maximum Value**
+**Problem**: Write a function that takes a dictionary with numeric values and returns the key associated with the maximum value. For example, `{"apple": 5, "banana": 2, "orange": 7}` should return `"orange"`.
+
+**Hint**: Iterate through the dictionary and track the key with the highest value. Use `items()` method and try to iterate between keys and lists, see if you can use an if condition to find key based on value.
+
+**Apply these ->**: for loop, if-else, `items()` method.
+
+---
+
+### 6. **Filter Dictionary by Value**
+**Problem**: Write a function that takes a dictionary and a threshold value, and returns a new dictionary containing only key-value pairs where the value is greater than the threshold. For example, `{"a": 10, "b": 5, "c": 15}` with threshold `7` should return `{"a": 10, "c": 15}`.
+
+**Apply these ->**: Dictionary iteration, conditionals, dictionary comprehension (optional).
+
+---
+
+### 7. **Nested Dictionary Access**
+**Problem**: Write a program to create a nested dictionary representing 3 students, with each student having a name and a dictionary of subjects with grades (e.g., `{"math": 90, "science": 85}`). Prompt the user for a student name and subject, then print the corresponding grade or an error message if not found.
+
+**Hint**: Create a Dicntionary with the Student name as Key, create a sub-dictionary for every student that has marks, grades, contact-details of the students.
+
+**Example Structure**: 
+```python
+{"Sreedhar": {'marks':{
+                        'maths':90,
+                        "science": 85
+                        },
+                'grade':'Pass/Fail/Distinction',
+                'contact-details':{
+                        'phone':123456789,
+                        'address':'Hyderabad',
+                        'landmark':'DhyanaManoPrasthanam'
+                                    }
+            },
+"Suresh": {'marks':{
+                    'maths':90,
+                    "science": 85
+                    },
+                'grade':'Pass/Fail/Distinction',
+                'contact-details':{
+                        'phone':123456789,
+                        'address':'Hyderabad',
+                        'landmark':'DhyanaManoPrasthanam'
+                                    }
+                            }
+}
+```
+
+**Apply these ->**: Nested dictionaries, key access : get(), input()
+
+---
+
+
+
+
+
+# Python Functions
+
+### 1. **Search-Find**
+**Problem**: Write a function that takes a dictionary and a Key-name as arguments, returns the key-value pair as dictionary if exists or returns the error message 'Key doesnt not exist as shown below.
+
+```python
+
+sample = {
+    'a':1,
+    'b':2,
+    'c':3,
+    'd':4
+}
+
+#function : search(dictioanry,keyName)
+
+Case(1) Input >>> search(sample,'b')
+Output >>> {'b':2}
+
+Case(2) Input >>> search(sample,'i')
+Output >>> {'i':'KeyNotFound'}
+
+```
+
+**Hint**: see if you find a key in the Dictionary and create a dubdictionary based on key and value being searched.
+
+**Apply these ->**: function, dict.get()
+
+
+### 2. **word-counter**
+**Problem**: Write a function that takes a Text and a String, returns a dictionary of the String and count of number of times the string has been repeated in the Text.
+
+```python
+sampleText = 'This is a beautiful day'
+
+search_string = 'a'
+
+>>> searchtext(sampleText,search_string)
+{
+    'a':3
+}
+
+```
